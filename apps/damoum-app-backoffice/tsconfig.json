@@ -1,0 +1,32 @@
+{
+  "extends": "../../tsconfig.base.json",
+   "compilerOptions": {
+    "baseUrl": "./",
+    "useDefineForClassFields": true,
+    "isolatedModules": true,
+    "strict": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@core/*": ["../../packages/core/*"],
+      "@config/*": ["../../packages/config/*"],
+      "@utils" : ["../../packages/utils/index"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "skipLibCheck": true,
+    "types": ["vite/client"]
+  },
+  "include": [
+    "vite.config.*",
+    "env.d.ts",
+    "shims.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "themeConfig.ts"
+    ]
+}

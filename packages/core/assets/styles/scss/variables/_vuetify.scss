@@ -1,0 +1,8 @@
+// ❗ Path must be relative
+// @forward 'packages/core/assets/styles/scss/template/libs/vuetify/variables';
+@forward '../template/libs/vuetify/variables'
+
+// ℹ️ Remove above import and uncomment below to override core variables.
+// @forward "../../@core/scss/template/libs/vuetify/variables" with (
+//   $<variable-name>: <variable-value>
+// )

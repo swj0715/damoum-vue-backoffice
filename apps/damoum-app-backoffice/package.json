@@ -1,0 +1,18 @@
+{
+    "name" : "damoum-app-backoffice",
+    "private" : true,
+    "dependencies": {
+      "@core": "*",
+      "@config": "*",
+      "@utils": "*"
+    },
+    "scripts": {
+      "dev": "vite --port 3000",
+      "build": "vite build",
+      "build:dev": "vite build --mode dev",
+      "build:prod": "vite build --mode prod",
+      "preview": "vite preview --port 5050",
+      "typecheck": "vue-tsc --noEmit",
+      "lint": "eslint . -c .eslintrc.js --fix --ext .ts,.js,.vue,.tsx,.jsx"
+  }
+}
